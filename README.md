@@ -105,10 +105,10 @@ With pre-trained checkpoints, you can run the evaluation on the given target dom
 CUDA_VISIBLE_DEVICES=0 python train_neko_sd.py --test --config_file alchemycat_configs/test/cfg.py
 ```
 
-Assume that you have the weight `logs/single-source/ma_to_ms/ViT-B-16_stage2_60.pth`, in the corresponding `cfg.py` you need to specify the weight path in a line:
+Assume that you have the weight `logs/single-source/ma_to_ms/checkpoint.pth`, in the corresponding `cfg.py` you need to specify the weight path in a line:
 
 ```python
-cfg.TEST.WEIGHT = "logs/single-source/ma_to_ms/ViT-B-16_stage2_60.pth"
+cfg.TEST.WEIGHT = "logs/single-source/ma_to_ms/checkpoint.pth"
 ```
 
 ## Checkpoints
