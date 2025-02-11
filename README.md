@@ -1,6 +1,7 @@
 # Unleashing the Potential of Pre-Trained Diffusion Models for Generalizable Person Re-Identification
 
 ![Static Badge](https://img.shields.io/badge/python-3.10-blue)
+![Static Badge](https://img.shields.io/badge/torch-1.13.1-orange)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unleashing-the-potential-of-pre-trained/generalizable-person-re-identification-on-21)](https://paperswithcode.com/sota/generalizable-person-re-identification-on-21?p=unleashing-the-potential-of-pre-trained)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unleashing-the-potential-of-pre-trained/generalizable-person-re-identification-on-23)](https://paperswithcode.com/sota/generalizable-person-re-identification-on-23?p=unleashing-the-potential-of-pre-trained)
@@ -30,12 +31,15 @@ In this work, we propose a novel method called diffusion model-assisted represen
 
 ## Installation
 
-Create a python environment and install dependencies in `requirements.txt`.
+Create a python environment and install dependencies.
 
 ```bash
 conda create -n dcac python=3.10
 conda activate dcac
-pip install -r requirements.txt
+pip install numpy
+pip install torch==1.13.1
+pip install loralib
+pip install opencv-python
 ```
 
 ### Prerequisites
