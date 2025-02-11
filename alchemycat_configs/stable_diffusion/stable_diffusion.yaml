@@ -1,0 +1,67 @@
+SD:
+  FINETUNE_MODE: 'lora' # lora, all, freeze
+  UNET:
+    PRETRAIN: 'pretrained/v1-5-pruned.ckpt'
+    UPDATE_PROMPT_EMB: true
+    LORA_RANK: -1 # # LoRA rank for fine-tuning
+                  # it should be assgined in specific config file
+    LORA_ALPHA: 1.0
+    IN_CHANNELS: 4
+    OUT_CHANNELS: 4
+    MODEL_CHANNELS: 320
+    CONTEXT_DIM: 768
+    ATTENTION_RESOLUTIONS: [4, 2, 1]
+    DROPOUT: 0.0
+    NUM_RES_BLOCKS: 2
+    CHANNEL_MULT: [1, 2, 4, 4]
+    CONV_RESAMPLE: true
+    DIMS: 2
+    NUM_HEADS: 8
+    NUM_HEAD_CHANNELS: -1
+    NUM_HEADS_UPSAMPLE: -1
+    USE_SCALE_SHIFT_NORM: false
+    RESBLOCK_UPDOWN: false
+    USE_NEW_ATTENTION_ORDER: false
+    USE_SPATIAL_TRANSFORMER: true
+    TRANSFORMER_DEPTH: 1
+    USE_CHECKPOINT: true
+    LEGACY: false
+    LR_MULT: 1.0 # learning rate multiplier on UNet parameters
+    CONDITION_BOTTLENECK_TYPE: 'embedding'
+    CONDITION_BOTTLENECK_INIT_STD: 1.0
+    PROB_TYPE: 'fc'
+    CONDITION_BOTTLENECK_TAU: 1.0
+    CONDITION_BOTTLENECK_USE_HARD_LABEL: false
+  DDPM:
+    IMAGE_SIZE: 128
+    TIMESTEPS: 1000
+    MAX_TIMESTEP_SAMPLED: 1000
+    CHANNELS: 4
+    SCALE_FACTOR: 0.18215
+    CLIP_DENOISED: true
+    LINEAR_START: 8.5e-4
+    LINEAR_END: 0.012
+    COSINE_S: 8.0e-3
+    GIVEN_BETAS: null
+    BETA_SCHEDULE: 'linear'
+    ORIGINAL_ELBO_WEIGHT: 0.0
+    V_POSTERIOR: 0.0
+    L_SIMPLE_WEIGHT: 1.0
+    PARAMETERIZATION: 'eps'
+    USE_POSITIONAL_ENCODINGS: False
+    LEARN_LOGVAR: False
+    LOGVAR_INIT: 0.0
+    NOISE_ESTIMATE_BEGIN_EP: 1 # Late noise estimation loss
+    AUG_RANDOM_CROP: false # RandomCrop for SD input
+  AUTOENCODER:
+    EMBED_DIM: 4
+    Z_CHANNELS: 4
+    RESOLUTION: 256
+    IN_CHANNELS: 3
+    OUT_CH: 3
+    CH: 128
+    CH_MULT: [1,2,4,4]
+    NUM_RES_BLOCKS: 2
+    ATTN_RESOLUTIONS: []
+    DROPOUT: 0.0
+    COLORIZE_NLABELS: null

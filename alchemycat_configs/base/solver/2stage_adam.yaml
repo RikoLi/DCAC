@@ -1,0 +1,34 @@
+SOLVER:
+  STAGE1:
+    OPTIMIZER_NAME: 'Adam'
+
+    MAX_EPOCHS: 120
+    IMS_PER_BATCH: 64
+
+    BASE_LR: 3.5e-4
+    WEIGHT_DECAY: 1.0e-4
+
+    WARMUP_LR_INIT: 0.00001
+    LR_MIN: 1.0e-6
+    WARMUP_METHOD: 'linear'
+    WARMUP_EPOCHS: 5
+
+    CHECKPOINT_PERIOD: 120
+
+  STAGE2:
+    OPTIMIZER_NAME: 'Adam'
+    
+    MAX_EPOCHS: 60
+    IMS_PER_BATCH: 64
+    
+    BASE_LR: 5.0e-6
+    WEIGHT_DECAY:  1.0e-4
+    
+    WARMUP_METHOD: 'linear'
+    WARMUP_ITERS: 10
+    WARMUP_FACTOR: 0.1
+    STEPS: [30, 50]
+    GAMMA: 0.1
+    
+    CHECKPOINT_PERIOD: 60
+    EVAL_PERIOD: 60

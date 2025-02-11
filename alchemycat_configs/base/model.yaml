@@ -1,0 +1,12 @@
+MODEL:
+  SEED: 1234
+
+  NAME: 'ViT-B-16'
+  STRIDE_SIZE: [16, 16]
+  FREEZE_PATCH_PROJ: true
+  FROZEN_BLOCKS: []
+  PRETRAINED: ''
+  ENABLE_CAM_EMB: false
+
+  # basic loss weight
+  ID_LOSS_WEIGHT: 1.0

@@ -1,0 +1,6 @@
+TEST:
+  WEIGHT: ''
+  IMS_PER_BATCH: 256
+  RE_RANKING: false
+  FEAT_NORM: true
+  AFTER_BN: true

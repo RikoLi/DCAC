@@ -1,0 +1,19 @@
+SOLVER:
+  STAGE2:
+    OPTIMIZER_NAME: 'SGD'
+    
+    MAX_EPOCHS: 60
+    IMS_PER_BATCH: 64
+    
+    BASE_LR: 3.5e-4
+    WEIGHT_DECAY:  1.0e-4
+    MOMENTUM: 0.9
+    
+    WARMUP_METHOD: 'linear'
+    WARMUP_ITERS: 10
+    WARMUP_FACTOR: 0.1
+    STEPS: [30, 50]
+    GAMMA: 0.1
+    
+    CHECKPOINT_PERIOD: 60
+    EVAL_PERIOD: 60
