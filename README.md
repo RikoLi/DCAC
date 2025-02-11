@@ -1,6 +1,7 @@
 # Unleashing the Potential of Pre-Trained Diffusion Models for Generalizable Person Re-Identification
 
 ![Static Badge](https://img.shields.io/badge/python-3.10-blue)
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unleashing-the-potential-of-pre-trained/generalizable-person-re-identification-on-21)](https://paperswithcode.com/sota/generalizable-person-re-identification-on-21?p=unleashing-the-potential-of-pre-trained)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unleashing-the-potential-of-pre-trained/generalizable-person-re-identification-on-23)](https://paperswithcode.com/sota/generalizable-person-re-identification-on-23?p=unleashing-the-potential-of-pre-trained)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unleashing-the-potential-of-pre-trained/generalizable-person-re-identification-on-22)](https://paperswithcode.com/sota/generalizable-person-re-identification-on-22?p=unleashing-the-potential-of-pre-trained)
