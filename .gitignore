@@ -1,8 +1,6 @@
 data
 pretrained
 **/__pycache__/**
-*.png
-*.jpg
 *.npy
 *.npz
 *.ipynb
