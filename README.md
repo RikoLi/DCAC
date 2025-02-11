@@ -12,7 +12,15 @@ In this work, we propose a novel method called diffusion model-assisted represen
 
 ## Upload History
 
-- 2025/2/11: Initiate README
+**2025/2/11**
+
+- [x] Initiate README
+- [x] Upload codes
+
+**TODO**
+
+- [ ] Upload checkpoints
+
 
 ## Pipeline
 
