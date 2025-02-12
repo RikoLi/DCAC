@@ -20,9 +20,9 @@ In this work, we propose a novel method called diffusion model-assisted represen
 - [x] Initiate README
 - [x] Upload codes
 
-**TODO**
+**2025/2/12**
 
-- [ ] Upload checkpoints
+- [x] Upload checkpoints
 
 
 ## Pipeline
@@ -113,7 +113,7 @@ cfg.TEST.WEIGHT = "logs/single-source/ma_to_ms/checkpoint.pth"
 
 ## Checkpoints
 
-We release the checkpoints trained on multiple source domains with the implementation details described in the paper. Checkpoints are packed in a `tar` file and uploaded to [OneDrive](xxxxx). You can refer to following table to find details of each checkpoint.
+We release the checkpoints trained on multiple source domains with the implementation details described in the paper. Checkpoints are packed in a `tar` file and uploaded to [OneDrive](https://zjueducn-my.sharepoint.com/:u:/g/personal/hal_42_zju_edu_cn/EX31S3SEpdVDmGPWq6aT2_8BdlqUL-DzoUz7yrM5xyQx7w?e=Z0mmCL). You can refer to following table to find details of each checkpoint.
 
 Source Domain | Target Domain | Protocol | Checkpoint Name
 :--: | :--: | :--: | :--:
