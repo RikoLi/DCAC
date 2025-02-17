@@ -6,9 +6,9 @@ import time
 from alchemy_cat.dl_config import load_config
 from model.clip_image_encoder import make_single_grained_model
 from engine.datasets.dataloader import make_dataloader_sd, make_val_dataloader
-from engine.solvers.optimizers import make_optimizer_neko_sd
+from engine.solvers.optimizers import make_optimizer_dcac
 from engine.solvers.schedulers import WarmupMultiStepLR
-from engine.neko_sd_trainers import train_neko_sd_pcl
+from engine.dcac_trainers import train_dcac_pcl
 from model.diffusion_wrapper import DCAC
 from utils.metrics import R1_mAP_eval
 
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     encoder = make_single_grained_model(cfg, num_classes, cam_num, view_num)
     model = DCAC(cfg, encoder)
     
-    optimizer = make_optimizer_neko_sd(cfg, model, use_lora=cfg.SD.FINETUNE_MODE=='lora')
+    optimizer = make_optimizer_dcac(cfg, model, use_lora=cfg.SD.FINETUNE_MODE=='lora')
     scheduler = WarmupMultiStepLR(optimizer, milestones=cfg.SOLVER.STAGE2.STEPS, gamma=cfg.SOLVER.STAGE2.GAMMA,
                                 warmup_factor=cfg.SOLVER.STAGE2.WARMUP_FACTOR,
                                 warmup_iters=cfg.SOLVER.STAGE2.WARMUP_ITERS,
@@ -48,7 +48,7 @@ if __name__ == '__main__':
  
     if not args.test:
         logger.info('Current mode: training')
-        train_neko_sd_pcl(
+        train_dcac_pcl(
             cfg,
             model,
             train_loader,

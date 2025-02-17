@@ -1,7 +1,7 @@
 import torch
 import loralib as lora
 
-def make_optimizer_neko_sd(cfg, model, use_lora=False):
+def make_optimizer_dcac(cfg, model, use_lora=False):
     params = []
     
     # Only mark LoRA layers in UNet first

@@ -86,10 +86,10 @@ We have prepared several configuration files to directly start training.
 
 ```bash
 # e.g. ma -> ms training
-CUDA_VISIBLE_DEVICES=0 python train_neko_sd.py --config_file alchemycat_configs/single-source/ma_to_ms/cfg.py
+CUDA_VISIBLE_DEVICES=0 python train_dcac.py --config_file alchemycat_configs/single-source/ma_to_ms/cfg.py
 
 # e.g. d+ms+c3 -> ma
-CUDA_VISIBLE_DEVICES=0 python train_neko_sd.py --config_file alchemycat_configs/multi-source/d+ms+c3_to_ma/cfg.py
+CUDA_VISIBLE_DEVICES=0 python train_dcac.py --config_file alchemycat_configs/multi-source/d+ms+c3_to_ma/cfg.py
 ```
 
 For custom training, you can edit the training script and write your own configs by referring to the official guide of [AlchemyCat](https://github.com/HAL-42/AlchemyCat).
@@ -102,7 +102,7 @@ With pre-trained checkpoints, you can run the evaluation on the given target dom
 
 ```bash
 # Assume that you write a new config for evaluation in alchemycat_configs/test/cfg.py
-CUDA_VISIBLE_DEVICES=0 python train_neko_sd.py --test --config_file alchemycat_configs/test/cfg.py
+CUDA_VISIBLE_DEVICES=0 python train_dcac.py --test --config_file alchemycat_configs/test/cfg.py
 ```
 
 Assume that you have the weight `logs/single-source/ma_to_ms/checkpoint.pth`, in the corresponding `cfg.py` you need to specify the weight path in a line:

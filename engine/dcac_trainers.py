@@ -12,7 +12,7 @@ from .utils import *
 from losses.ce_loss import CrossEntropyLabelSmooth
 from losses.cm import ClusterMemoryAMP
 
-def train_neko_sd_pcl(cfg, model, train_loader, val_loader, cluster_loader,
+def train_dcac_pcl(cfg, model, train_loader, val_loader, cluster_loader,
                       optimizer, scheduler, num_query):
     checkpoint_period = cfg.SOLVER.STAGE2.CHECKPOINT_PERIOD
     eval_period = cfg.SOLVER.STAGE2.EVAL_PERIOD
