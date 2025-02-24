@@ -9,7 +9,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unleashing-the-potential-of-pre-trained/generalizable-person-re-identification-on-20)](https://paperswithcode.com/sota/generalizable-person-re-identification-on-20?p=unleashing-the-potential-of-pre-trained)
 
 
-Official implementation code for the paper [Unleashing the Potential of Pre-Trained Diffusion Models for Generalizable Person Re-Identification](todo).
+Official implementation code for the paper [Unleashing the Potential of Pre-Trained Diffusion Models for Generalizable Person Re-Identification](https://arxiv.org/abs/2502.06619).
 
 In this work, we propose a novel method called diffusion model-assisted representation learning with a correlation-aware conditioning scheme (DCAC) to enhance DG Re-ID. Our method integrates a discriminative and contrastive Re-ID model with a pre-trained diffusion model through a correlation-aware conditioning scheme. By incorporating ID classification probabilities generated from the Re-ID model with a set of learnable ID-wise prompts, the conditioning scheme injects dark knowledge that captures ID correlations to guide the diffusion process. Simultaneously, feedback from the diffusion model is back-propagated through the conditioning scheme to the Re-ID model, effectively improving the generalization capability of Re-ID features.
 
