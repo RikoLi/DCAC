@@ -24,6 +24,10 @@ In this work, we propose a novel method called diffusion model-assisted represen
 
 - [x] Upload checkpoints
 
+**2025/2/24**
+
+- [x] Fix config typos in [Issue #2](https://github.com/RikoLi/DCAC/issues/2#issuecomment-2677366584)
+- [x] Add paper link
 
 ## Pipeline
 
