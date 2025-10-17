@@ -15,6 +15,11 @@ In this work, we propose a novel method called diffusion model-assisted represen
 
 ## Upload History
 
+**2025/10/17**
+
+- [x] Fix typo in Equation 2 (missing a `$\log$` before)
+- [x] Update single-source SOTA results with performances reported in original papers
+
 **2025/2/11**
 
 - [x] Initiate README
